@@ -288,23 +288,23 @@ h1 span{
     letter-spacing: 2px;
     font-size: 1.6rem;
 }
-.contact-details{
-    display: flex;
-    flex-direction: column;
-    background: #fff;
+.contact-details {
     border-radius: 20px;
-    margin: 50px 35px;
-    width: 75vw;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-}
-.contact-details-email{
+    display: flex;
+    justify-content: space-between; /* Adicionado para alinhar lado a lado */
+    background-color: white;
+    
+  }
+  
+  .contact-details-email,
+  .contact-details-whatsapp,
+  .contact-details-instagram {
+    flex: 0 0 20%; /* Ajuste a largura conforme necessário */
     margin: 30px;
     transition-duration: 0.7s;
     border-radius: 10px;
     border: 0.5px solid #ddd;
-}
+  }
 .contact-details-email img{
     width: 50px;
     display: block;
@@ -330,72 +330,78 @@ h1 span{
 .contact-details-email:hover{
 	box-shadow: 0 2px 15px 0 #aaa;
 }
-.titulo-contact_form{
-	margin: 20px 20px;
-	font-weight: 500;
-	letter-spacing: 2px;
-	font-size: 1.2rem;
-	align-self: flex-start;
+.contact-details-whatsapp img{
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
 }
-.form_contact{
-	padding: 20px;
-	margin: 10px;
-	height: 60vh;
+.contact-details-whatsapp a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--maincolor);
+    font-size: 18px;
 }
-.name{
-	height: 8vh;
-	width: 32.4vw;
-	border-radius: 10px;
-	margin-bottom: 10px;
-	margin-right: 0.4vw;
-	padding: 7px;
-	border-color: #aaa;
-	border-style: solid;
+.contact-details-whatsapp p{
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #555;
+    font-size: 15px;
 }
-.email{
-	display: inline;
-	height: 8vh;
-	width: 36.5vw;
-	border-radius: 10px;
-	margin-bottom: 10px;
-	padding: 7px;
-	border-color: #aaa;
-	border-style: solid;
+.contact-details-instagram img {
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
 }
-.subject{
-	height: 8vh;
-	width: 70vw;
-	border-radius: 10px;
-	margin-bottom: 10px;
-	padding: 7px;
-	border-color: #aaa;
-	border-style: solid;
+  
+  .contact-details-instagram a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--maincolor);
+    font-size: 18px;
+  }
+  
+  .contact-details-instagram p {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #555;
+    font-size: 15px;
+  }
+  
+  .contact-details-instagram:hover {
+    box-shadow: 0 2px 15px 0 #aaa;
+  }
+.contact-details-whatsapp:hover{
+	box-shadow: 0 2px 15px 0 #aaa;
 }
-.form_contact textarea{
-	resize: none;
-	height: 25vh;
-	width: 70vw;
-	margin: 10px 0;
-	border-radius: 15px;
-	padding: 10px;
-    border-color: #aaa;
-    border-style: solid;
-}
-.submit{
-	margin-top: 15px;
-	font-size: 18px;
-	padding: 10px 10px;
-	border-radius: 15px;
-	border: 1px solid #aaa;
-	color: #eee;
-	background: var(--maincolor);
-	position: relative;
-	left: 45%;
+.copy-button {
+    /* Adicionado para centralizar o botão */
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px; /* Adapte conforme necessário */
+    background-color: var(--maincolor);
+    color: #fff;
+    border: none;
+    padding: 10px;
     cursor: pointer;
-}
-.submit:hover{
-    box-shadow: 0 2px 15px 0 #000070;
-}
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .copy-button:hover {
+    background-color: #aaa; /* Adapte a cor conforme necessário */
+  }
+  
 /* --------------FOOTER------------------------------------------------------------------------------------------ */
 footer{
     margin-top: 15px;

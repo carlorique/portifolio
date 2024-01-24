@@ -55,7 +55,7 @@
             <div class="about">
                 <h2 class="titulo-about" id="about">RESUMO</h2>
                 <p class="information">
-                    Tenho 22 anos e iniciei minha graduação universitária em 2019. Embora tenha pouca experiência profissional em desenvolvimento, possuo uma grande motivação para trabalhar e aprender cada vez mais neste mundo incrível da programação, especialmente em Python e Inteligência Artificial. Sou extremamente dedicado e responsável, e estou em busca de uma oportunidade que me permita demonstrar meus conhecimentos e habilidades. Estou dedicando cada vez mais tempo aos meus estudos sobre JavaScript e outras tecnologias relacionadas. Meu objetivo é me tornar um desenvolvedor de excelência.<br><br>
+                    Tenho 23 anos e iniciei minha graduação universitária em 2019. Embora tenha pouca experiência profissional em desenvolvimento, possuo uma grande motivação para trabalhar e aprender cada vez mais neste mundo incrível da programação, especialmente em Python e Inteligência Artificial. Sou extremamente dedicado e responsável, e estou em busca de uma oportunidade que me permita demonstrar meus conhecimentos e habilidades. Estou dedicando cada vez mais tempo aos meus estudos sobre JavaScript e outras tecnologias relacionadas. Meu objetivo é me tornar um desenvolvedor de excelência.<br><br>
 
                     Em 2015, enquanto cursava Operador de Computador, tive a oportunidade de aprender disciplinas fundamentais, como Montagem e Manutenção de Computadores, Cabeamento Estruturado, Sistemas Operacionais de Rede, Serviços de Rede e Aplicações Web, além de Segurança de Computadores.<br><br>
 
@@ -73,13 +73,13 @@
                 <h2 class="titulo-skills" id="skills">HABILIDADES</h2>
                 <ul class="grid_container">
                     <li class="grid_items"><img src="./img/html.svg" alt="html"><P>HTML</P></li>
-                    <li class="grid_items"><img src="./img/css.svg" alt="html"><P>CSS</P></li>
-                    <li class="grid_items"><img src="./img/javascript.svg" alt="html"><P>JAVASCRIPT</P></li>
-                    <li class="grid_items"><img src="./img/c_logo.jpg" alt="html"><P>C</P></li>
-                    <li class="grid_items"><img src="./img/node.png" alt="html"><P>NODE</P></li>
-                    <li class="grid_items"><img src="./img/git.svg" alt="html" ><P>GIT</P></li>
-                    <li class="grid_items"><img src="./img/github.png" alt="html"><P>GITHUB</P></li>
-                    <li class="grid_items"><img src="./img/python.png" alt="html"><P>PYTHON</P></li>
+                    <li class="grid_items"><img src="./img/css.svg" alt="css"><P>CSS</P></li>
+                    <li class="grid_items"><img src="./img/javascript.svg" alt="javascript"><P>JAVASCRIPT</P></li>
+                    <li class="grid_items"><img src="./img/angular.png" alt="angular"><P>ANGULAR</P></li>
+                    <li class="grid_items"><img src="./img/node.png" alt="node"><P>NODE</P></li>
+                    <li class="grid_items"><img src="./img/git.svg" alt="git" ><P>GIT</P></li>
+                    <li class="grid_items"><img src="./img/github.png" alt="github"><P>GITHUB</P></li>
+                    <li class="grid_items"><img src="./img/python.png" alt="python"><P>PYTHON</P></li>
                 </ul>
             </div>
         </section>
@@ -145,31 +145,55 @@
         </section>
         <!--Quinta parte da pagina(Contact)-->
         <section class="contact">
-			<h2 class="titulo-contact" id="contact">CONTATO</h2>
-			<div class="contact-details">
-				<div class="contact-details-email">
-					<img src="./img/email.svg">
-					<a href="mailto:carlos.job321@gmail.com">carlos.job321@gmail.com</a>
-					<p>Email Me</p>
-				</div>
-				<h3 class="titulo-contact_form">Contact Form</h3>
-				<form class="form_contact" action="https://formsubmit.co/carlos.job321@gmail.com" method="POST" >
-					<input type="text" class="name" required placeholder="Name *">
-					<input type="email" class="email" required placeholder="Email *">
-					<input type="text" class="subject" required placeholder="Subject *">
-					<textarea required placeholder="Your Message *"></textarea>
-                    <input type="hidden" name="_next" value="https://carlorique.github.io/portifolio/">
-                    <input type="hidden" name="_captcha" value="false">
-					<input class="submit" type="submit">
-				</form>
-			</div>
-		</section>
-
+            <h2 class="titulo-contact" id="contact">CONTATO</h2>
+            <div class="contact-details">
+              <div class="contact-details-email">
+                <img src="./img/email.svg">
+                <a href="mailto:carlos.job321@gmail.com" target="_blank">carlos.job321@gmail.com</a>
+                <p>Email Me</p>
+                <button class="copy-button" onclick="copyToClipboard('carlos.job321@gmail.com')">Copy</button>
+              </div>
+              <div class="contact-details-whatsapp">
+                <img src="./img/wpp.png">
+                <a href="https://wa.me/5592993332292" target="_blank">+55(92)993332292</a>
+                <p>WhatsApp Me</p>
+                <button class="copy-button" onclick="copyToClipboard('5592993332292')">Copy</button>
+              </div>
+              <div class="contact-details-instagram">
+                <img src="./img/insta.png"> <!-- Substitua 'instagram.svg' pelo caminho real da imagem do Instagram -->
+                <a href="https://www.instagram.com/carlmarinho" target="_blank">@carlmarinho</a>
+                <p>Instagram</p>
+                <button class="copy-button" onclick="copyToClipboard('carlmarinho')">Copy</button>
+              </div>
+            </div>
+          </section>
+          <script>
+            function copyToClipboard(text) {
+              // Cria um elemento de input temporário
+              var tempInput = document.createElement('input');
+              tempInput.value = text;
+              document.body.appendChild(tempInput);
+          
+              // Seleciona o texto no campo de input temporário
+              tempInput.select();
+              tempInput.setSelectionRange(0, 99999);
+          
+              // Copia o texto para a área de transferência
+              document.execCommand('copy');
+          
+              // Remove o campo de input temporário
+              document.body.removeChild(tempInput);
+          
+              // Pode adicionar algum feedback aqui, como um alerta ou mensagem
+            //   alert('Texo copiado com sucesso: ' + text);
+            }
+          </script>
     </main>
     <!--FOOTER-->
     <footer>
-        <p class="copyright">2023 - Carlos Henrique</p>
+        <p class="copyright">2024 - Carlos Henrique</p>
     </footer>
     <script src="navResponsive.js"></script>
+    <script src=""></script>
 </body>
 </html>
