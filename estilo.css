@@ -26,6 +26,7 @@
 }
 nav{
 	display: flex;
+    position: fixed;
 	justify-content: space-around;
 	align-items: center;
 	font-family: system-ui, '-apple-system', Helvetica, Arial, sans-serif;
@@ -63,12 +64,12 @@ body{
 }
 /*Primeira página com foto e descrição.*/
 .description{
-	height: 91vh;
+	height: 100vh;
 	display: flex;
 	width: 75vw;
 	align-items: center;
 	justify-content: center;
-	margin-left: 12vw;
+	margin-left: 10vw;
 }
 .main_photo{
 	display: flex;
