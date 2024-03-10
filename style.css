@@ -163,6 +163,7 @@ h1 span{
     display: flex;
     flex-direction: column;
     margin: 30px 40px;
+    justify-content: normal;
 
 }
 .titulo-about{
@@ -174,12 +175,11 @@ h1 span{
 }
 .information{
     background-color: #fff;
-    padding: 30px 10vw;
+    padding: 30px 3vw;
     border-radius: 50px;
     font-size: 1.1rem;
     letter-spacing: 1px;
     width: 75vw;
-    text-align: justify;
     align-self: center;
 }
 .skills{
