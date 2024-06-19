@@ -256,6 +256,7 @@ h1 span {
   padding: 40px;
   border-radius: 50px;
   width: 75vw;
+  margin-bottom: 20px;
 }
 .grid_items_div {
   display: flex;
@@ -266,6 +267,7 @@ h1 span {
   border-radius: 20px;
   margin: 8px;
   padding: 8px;
+  margin-bottom: 5px;
 }
 .grid_items_div h3 {
   text-align: center;
@@ -444,7 +446,7 @@ link:active {
 
 /* --------------FOOTER------------------------------------------------------------------------------------------ */
 footer {
-  margin-top: 10px;
+  margin-top: 40px;
   width: 100vw;
   height: 6vw;
   
@@ -453,10 +455,11 @@ footer {
 }
 .copyright {
   text-align: center;
-  padding: 1vw 0;
+  padding: 3vw 0;
   font-weight: bold;
   color: #eee;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  background-color: #000070;
 }
 /* --------------RESPONSIVE------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 300px) and (max-width: 750px) {
@@ -516,7 +519,7 @@ footer {
     margin-bottom: 250px;
   }
   .description_text {
-    text-align: center;
+    text-align: center
   }
   .socialmedia {
     display: inline-flex;
@@ -533,8 +536,8 @@ footer {
     color: var(--maincolor);
   }
   .titulo-about {
-    margin-top: 10vh;
-    margin-bottom: 40px;
+    margin-top: 20vh;
+    margin-bottom: 30px;
   }
   .grid_container_works {
     grid-template-columns: repeat(2, 35vw);
@@ -543,10 +546,15 @@ footer {
   .grid_items_works {
     width: 25vw;
     height: 17vw;
+    
+    
   }
   .grid_items_div {
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
+    margin: 3px;
+    
+    
   }
   .name {
     width: 32vw;
